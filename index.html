@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="assets/css/index.css">
+	<title>index</title>
+	
+	
+	
+<!--	JAM-->
+	<script type="text/javascript">
+ window.onload = function() { jam(); }
+
+ function jam() {
+  var e = document.getElementById('jam'),
+  d = new Date(), h, m, s;
+  h = d.getHours();
+  m = set(d.getMinutes());
+  s = set(d.getSeconds());
+
+  e.innerHTML = h +':'+ m +':'+ s;
+
+  setTimeout('jam()', 1000);
+ }
+
+ function set(e) {
+  e = e < 10 ? '0'+ e : e;
+  return e;
+ }
+</script>
+<!--AKHIR JAM-->
+
+
+
+</head>
+<body>
+<!--TOPBAR ATAU NAVBAR-->
+	 <div class="top-bar">
+	<ul>
+ 	<li><a href="#portfolio">Portfolio</a></li>
+ 	<li><a href="#contact">Contact</a></li>
+ 	<li><a href="#intro">About</a></li>
+ 	<li><a href="#skills">Skills</a></li>
+ 	<li><a href="#sosmed">Social Media</a></li>
+ 	
+ 	
+ 	</ul>
+ 	</div>
+<!-- AKHIR TOPBAR/NAVBAR-->
+ 	
+ 	
+<!-- PENGENALAN/FOTO/INTRO-->
+	<header>
+		<div class="intro" id="intro">
+			<img src="assets/img/1.jpg" alt="">
+			<h1>Michael Herda Setiawan</h1>
+			<h2>Fotografer &amp; web designer</h2>
+			<h1 style="font-size: 100px; font-family: arial; color:#FFF; background:black; opacity: 0.5;" id="jam"></h1>
+			
+		</div>
+	</header>
+<!--AKHIR PENGENALAN/FOTO/INTRO-->
+	
+	
+<!--ABOUT ATAU SELAMAT DATANG	-->
+	<div class="wrapper">
+		<section id="about">
+			<div class="about-content">
+				<h3>Selamat Datang!</h3>
+				<p>hai teman-teman, selamat datang di websie portfolio saya.
+				perkenalkan nama saya Michael Herda Setiawan, umur 18tahun, saya lahir di Bandung tepatnya pada tanggal 28 April 1999, saya tinggal di Subang tapi sekarang saya sedang mengejar pendidikan di Bandung, tepatnya saya sedang kuliah di Universitas Pasundan Bandung.
+				<br>
+				ini adalah tampilan Website Portfolio saya, saya membuat Website ini menggunakan HTML, CSS, dan sedikit JavaScript.
+				Mengapa tidak menggunakan Bootstrap? karena saya ingin me-review kemampuan saya di CSS dan HTML sekalian mengeksplor hal-hal yg belum saya coba di perkuliahan, mungkin sekian perkenal dari saya. <b>enjoy it</b>
+				<br>
+				<br>
+				</p>
+			</div>
+		</section>
+	</div>
+<!--AKHIR ABOUT ATAU SELAMAT DATANG-->
+	
+<!--GAMBAR FOTO SCROLL-->
+	<div class="parallax">
+	</div>
+<!--AKHIR GAMBAR-->
+
+
+<!--PORTFOLIO-->
+<div class="portfolio">
+	  <section class="about">
+	    <div class="about-content">
+	      <h3 id="portfolio">Portfolio</h3>
+	      <hr>
+	      
+	      <img class="poto" src="assets/img/foto4.jpg" style="width: 300px" alt=""> 
+	      <img class="poto" src="assets/img/folio.jpg" style="width: 300px" alt=""> 
+	      <img class="poto" src="assets/img/port.jpeg" style="width: 300px" alt=""> 
+	      <p class="caption">Ini adalah contoh dari karya-karya saya yang pernah saya konteskan, dan alhamdulillah saya memenangkan kontes itu, dan inshaallah saya tidak akan berhenti membuat karya-karya saya, mengapa saya pilih tiga? karena tiga foto ini merupakan karya-karya terbaik saya, selengkapnya kalian bisa cek karya-karya saya di instagram, silahkan cek dibagian <b>Social Media!</b> </p>
+	      <br>
+	      <br>
+	      <br>
+	      
+	      </div>
+<!--AKHIR PORTFOLIO-->
+     
+     
+     
+     
+	</section> 
+<!--SKILLS/KEMAMPUAN-->
+      <div class="skills" id="skills">
+      <h3>kemampuan</h3>
+      	<img src="assets/img/skill.jpg" alt="ide cemerlang" style="width: 200px; height: 200px;">
+      	<h4 style="text-align: center; font-weight: bolder;">KONSEP</h4>
+      	<hr>
+      	<p style="text-align: center;"><b>Memberikan ide-ide yang cemerlang kepada client mengenai konsep, dan memberi masukan-masukan yang mungkin bisa dipertimbangkan atau menjadi solusi terbaik.</b></p>
+      	<br> <br> <br>
+      	<img src="assets/img/skill2.png" alt="fotografi" style="width: 200px; height: 200px;">
+      	<h4 style="text-align: center; font-weight: bolder;">FOTOGRAFI</h4>
+      	<hr>
+      	<p style="text-align: center; font-weight: bolder;"><b>Kemampuan berfoto dan mencari angle-angle yang pas beserta konsep fotografi yang sedang dicari atau menciptakan konsep tersendiri yang memiliki nilai khas.</b></p>
+      	<br> <br> <br>
+      </div>
+<!-- AKHIR SKILLS/KEMAMPUAN-->
+</div>
+
+
+
+<!--BACKGROUND CONTACT-->
+<div class="bgbaru">
+	
+</div>
+<!--AKHIR BACKGROUND CONTACT-->
+
+
+
+
+<!--CONTACT-->
+<div class="contact">
+	<h3 id="contact">Contact</h3>
+	<hr>
+	<p>Jika berminat untuk bekerja sama, isi data diri anda melalui form dibawah ini dan sertakan juga Data diri anda. email: <a href="https://mail.google.com/michaelherda@mail.unpas.ac.id"><b>Contact: michaelherda@mail.unpas.ac.id</b></a></p>
+  <form style="text-align: center">
+  First name:<br>
+  <input type="text" name="firstname" value="...">
+  <br>
+  Last name:<br>
+  <input type="text" name="lastname" value="...">
+  <br>
+  <br>
+  Pilih minat:
+  <br>	
+   <select name="bidang">
+    <option value="fotografi">Fotografi</option>
+    <option value="web designer">Web Designer</option>
+    <option value="Other">Lainnya</option>
+  </select>
+  <br>
+  <br>
+  	Pesan yang ingin disampaikan:
+  	<br>
+	<textarea name="message" rows="10" cols="50"></textarea>
+  <br>
+  <input type="submit" value="Submit">
+</form> 
+<br>
+</div>
+<!--AKHIR CONTACT-->
+
+
+<!--SOSMED-->
+<div class="sosmed" id="sosmed">
+<h1 style="text-align: center;">CONNECT WITH ME ON SOCIAL MEDIA</h1>
+	<br><br><br>
+	<a href=" https://www.instagram.com/michaelherda/"><img src="assets/img/sosmed.png" alt=""></a>
+	<a href="https://www.twitter.com/@michaelherdas/"><img src="assets/img/sosmed3.png" alt=""></a>
+	<a href="https://www.facebook.com/Michael Herda/"><img src="assets/img/sosmed2.png" alt=""></a>
+	<br><br><br>
+	<h2 style="text-align: center;">ikuti kami melalui sosial media untuk mendapatkan info-info terkini dari kami!</h2>
+</div>
+<!--AKHIR SOSMED-->
+
+
+<!--FOOTER-->
+<div class="footer">
+	    Copyright &copy; 2017. MichaelHerda
+</div>
+
+<!--AKHIR FOOTER-->
+</body>
+</html>
